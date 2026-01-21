@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Language Translator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="translator_property">
+        <ul class="nav_item">
+            <li>
+                <select class="fromLang"></select>
+            </li>
+
+            <li class="bx bx-transfer"></li>
+
+            <li>
+                <select class="toLang"></select>
+            </li>
+        </ul>
+    </div>
+
+    <div class="write_box">
+
+        <div class="property_from">
+            <textarea class="fromText" maxlength="5000" placeholder="Write text here..."></textarea>
+            <div class="icons">
+                <span class="bx bx-volume-full"></span>
+                <div class="code_length">0 / 5000</div>
+            </div>
+        </div>
+
+        <div class="property_trans">
+            <textarea class="toText" readonly placeholder="Translation..."></textarea>
+            <div class="icons">
+                <span class="bx bx-volume-full"></span>
+                <span class="bx bx-copy"></span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="language.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
